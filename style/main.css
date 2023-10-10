@@ -1,0 +1,9 @@
+html {
+    width: fit-content;
+} 
+canvas {
+    border: 3px solid;
+}
+.save_control ,.run-maze {
+    margin-top: 20px;
+}

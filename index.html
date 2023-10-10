@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
+        integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Maze Game</title>
+    <script src="./src/account.js"></script>
+    <script src="./src/seedrandom.js"></script>
+
+
+
+    </script>
+
+    <script src="./src/players.js"></script>
+    <script src="./src/Maze.js" defer></script>
+    <script src="./src/Direction.js" defer></script>
+    <script src="./src/maze_generator.js" defer></script>
+    <script src="./backtracking.js" defer></script>
+
+    <!-- <script src="./mainGame.js"></script> -->
+    <!-- <script src=""></script> -->
+    <!-- <link rel="stylesheet" href="./style/reset.css"> -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/option-menu.css">
+    <link rel="stylesheet" href="./style/control.css">
+    <link rel="stylesheet" href="./style/control_box.css">
+    <!-- <script src="https://kit.fontawesome.com/50ecca59bf.js" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="game">
+
+        <div class="game-display">
+            <main></main>
+        </div>
+
+        <div class="control">
+            <div class="cell_width option">
+                <span class="label">cell width</span>
+                <input type="number" id="cell_width" placeholder="5" value="5" min="5" max="15">
+                <span> px</span>
+            </div>
+            <div class="x_cell option">
+                <span class="label">total cell x</span>
+                <input type="number" id="x_cell" placeholder="170" value="170" min="10" max="1000">
+                <span></span>
+            </div> 
+            <div class="y_cell option">
+                <span class="label">total cell y</span>
+                <input type="number" id="y_cell" placeholder="170" value="170" min="10" max="1000">
+                <span></span>
+            </div>
+
+            <div class="speed option">
+                <span class="label">speed</span>
+                <input type="number" id="speed" placeholder="100" value="100" min="0">
+                <span>ms</span>
+            </div>
+
+            <div class="algorithm option">
+                <span class="label">algorithm</span>
+                <select name="" id="algorithm">
+                    <option value="dijkstra">dijkstra</option>
+                    <option value="backtracking">backtracking</option>
+                </select>
+                <span></span>
+            </div>
+            <div class="win_point option">
+                <span class="label">position</span>
+                <input type="number" name="" id="x_point" placeholder="10" value="10" min="0" >
+                <input type="number" name="" id="y_point" placeholder="10" value="10" min="0" >
+                <span></span>
+            </div>
+            <div class="save_control">
+                <button>generate</button>
+            </div>
+            <div class="run-maze">
+                <button>Run</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+    </script>
+    <script>
+        // document.addEventListener('keydown',movement)
+        //  [...document.querySelectorAll('[data-key]')].forEach(element => {
+        //      element.addEventListener('click',movement)
+        //  });
+    </script>
+
+
+</body>
+
+</html>
